@@ -124,7 +124,6 @@ fn main() -> Result<(), String> {
         triangle.draw(&canvas);
 
         canvas.present();
-        
         // Al usar present_vsync(), el delay ya lo maneja el monitor,
         // pero dejamos esto como respaldo para evitar consumir 100% de CPU
         std::thread::sleep(Duration::from_millis(16));
